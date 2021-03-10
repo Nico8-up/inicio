@@ -8,4 +8,28 @@ basic.forever(function () {
     if (input.isGesture(Gesture.ScreenDown)) {
         music.playMelody("C5 C C5 C C5 C C5 C ", 129)
     }
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # . . . #
+        # # # # #
+        `)
+    basic.pause(200)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # # # # #
+        . . . . .
+        `)
+    basic.pause(200)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # # # # #
+        # . . . #
+        `)
+    basic.pause(200)
 })
